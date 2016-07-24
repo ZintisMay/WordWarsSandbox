@@ -1,0 +1,39 @@
+body{
+	background-image: url("../images/steamworkshop_webupload_previewfile_327002106_preview.jpg");
+	/*background-image: url("../images/Simple-Minimalist-Minimal-Aero-Wallpaper-HD.jpg");*/
+	background-repeat: repeat;
+}
+
+@font-face {
+  font-family:  atariFull;
+  src:      url('../fonts/atariFull.woff');
+  src:      local('atariFull'),
+          url('../fonts/atariFull.ttf'),
+          format('truetype');
+}
+
+body {
+  font-family: atariFull;
+  font-size: 10px;
+  color: yellow;
+}
+
+
+.well{
+  background-color: Transparent;
+  border: none;
+}
+
+
+caption {
+  color: yellow;
+  font-size: 24px;
+}
+
+#currentUser {
+    color: grey;
+}
+
+.table-hover > tbody > tr:hover {
+    color: #727171;
+}

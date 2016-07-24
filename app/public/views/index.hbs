@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="static/assets/css/style.css">
+<link rel="stylesheet" href="static/assets/css/indexstyle.css">
+<div id ="body">
+	<div class="container">
+		<!--<div class="hundredTall">
+		</div>-->
+		<div id = "Q" class="hundredTall" style="margin-top:30px;">
+		</div>
+
+
+		<!-- Header -->
+		<p class="Three-Dee">WORD WARS</p>
+
+		<!--<div id ="D"><img class=""alt="image" src="static/assets/images/space_invader1.gif">
+		   
+		</div>-->
+
+		
+		
+		<!-- Page Content -->
+		<!--<div class="row">-->
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				
+					<div class="panel-body">
+						<a class="btn btn-default form-control" id="login" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Login</a>
+					</div>
+
+					<div class="panel-body">	
+						<a class="btn btn-default form-control" id="register" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span> Register</a>
+					</div>
+
+					<div class="panel-body">	
+						<a class="btn btn-default form-control" id="play" href="/game"><span class="glyphicon glyphicon-screenshot"></span> Play Now</a>
+					</div>
+					
+		    </div>
+	    </div>
+          
+  	    <div id = "A" class="hundredTall">
+	    </div>
+	    <div id = "B" class="hundredTall">
+	    </div>
+	    <div id = "C" class="hundredTall">
+	    </div>
+		
+			
+
+        
+
+		<!-- Register Modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel">
+			<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        	<h4 class="modal-title text-center" id="registerModalLabel">Register</h4>
+		      	</div>
+		      	<div class="modal-body">
+		      		<h4>Username</h4>
+					<input type="name" class="form-control" id="regName">		
+		      		<h4>Email Address</h4>
+					<input type="name" class="form-control" id="regEmail">		
+					<h4>Password</h4>
+					<input type="password" class="form-control" id="regPassword">
+					<h4>Confirm Password</h4>
+					<input type="password" class="form-control" id="confirmPassword">
+					<div id="errorMessage"></div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<a class="btn btn-default" id="registerUser"><span class="glyphicon glyphicon-pencil"></span> Register</a>
+		      	</div>
+		    </div>
+		  	</div>
+		</div>
+		
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        	<h4 class="modal-title text-center" id="loginModalLabel">Login</h4>
+			      	</div>
+			      	<div class="modal-body">
+			      		<h4>Email Address</h4>
+						<input type="name" class="form-control" id="logEmail">		
+						<h4>Password</h4>
+						<input type="password" class="form-control" id="logPassword">
+						<div id="loginError"></div>
+			      	</div>
+			      	<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" id="loginUser"><span class="glyphicon glyphicon-pencil"></span> Login</button>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+	</div>
+	
+     
+  <div class = "sound">
+  <embed src="static/assets/audio/Radar 1.wav" autostart = "true"loop= "true"></embed>
+  </div>
+
+  </div>
+	
+	<script>
+$('#register').on('click', function(){
+	//Initialize the Modal
+	$('#registerModal').modal('show');
+	setTimeout(function(){$('#regName').focus();},500);
+
+});
+
+$('#login').on('click', function(){
+	//Initialize the Modal
+	$('#loginModal').modal('show');
+	setTimeout(function(){$('#logEmail').focus();},500);
+
+});
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCXnQJ0MgyrTy_vE6zwtHK8863bhjDKx6Y",
+    authDomain: "wordwars-b7992.firebaseapp.com",
+    databaseURL: "https://wordwars-b7992.firebaseio.com",
+    storageBucket: "wordwars-b7992.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+<script src="static/assets/js/login.js"></script>
+<script src="static/assets/js/loginAnimation.js"></script>

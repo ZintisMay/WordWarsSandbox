@@ -1,0 +1,29 @@
+{
+  "name": "wordwards",
+  "version": "1.0.0",
+  "description": "Multiplayer word game playable in the browser.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltdelia/WordWars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltdelia/WordWars/issues"
+  },
+  "homepage": "https://github.com/ltdelia/WordWars#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "firebase": "^3.2.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.23.4"
+  }
+}
